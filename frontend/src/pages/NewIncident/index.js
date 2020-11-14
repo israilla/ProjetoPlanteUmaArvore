@@ -45,8 +45,8 @@ export default function NewIncident(){
         <section>
           <img src ={logoImg} alt="Be The Hero"/>
 
-          <h1>Cadastrar novo caso</h1>   
-          <p>Descreva o caso detalhadamente para encontrar um herói para resoler isso</p>
+          <h1>Fazer uma nova doação</h1>   
+          {/* <p>Descreva a árvore</p> */}
 
           <Link className= "back-link" to="/profile">
           <FiArrowLeft size={16} color="#e02041" />
@@ -56,7 +56,7 @@ export default function NewIncident(){
 
         <form onSubmit={handleNewIncident}>
           <input 
-          placeholder="Título do caso"
+          placeholder="Nome da Árvore"
           value={title}
           onChange={e=> setTitle(e.target.value)}
           />

@@ -53,17 +53,17 @@ export default function Profile() {
           <img src={logoImg} alt="Be The Hero" />
           <span>Bem vinda, {ongName}</span>
 
-          <Link className="button" to="/incidents/new">Castrar novo caso</Link>
+          <Link className="button" to="/incidents/new">Fazer uma nova doação</Link>
           <button onClick ={handleLogout}type="button">
             <FiPower size={18} color="#e02041" />
           </button>
         </header>
-        <h1>Casos cadastrados</h1>
+        <h1>Doações feitas</h1>
 
         <ul>
           {incidents.map(incident => (
             <li key={incident.id}>
-              <strong>CASO:</strong>
+              <strong>Árvore:</strong>
               <p>{incident.title}</p>
 
               <strong>DESCRIÇÃO</strong>
